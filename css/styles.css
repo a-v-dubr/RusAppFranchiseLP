@@ -1,0 +1,822 @@
+/* Reset and base styles start */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Reset and base styles end */
+
+/* Common styles start */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Common styles end */
+
+/* Forms' styles start */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+/* Forms' styles start */
+
+/* Fonts start */
+
+@font-face {
+    font-family: 'Fibre Vintage Full';
+    src: url('FibreVintageFull-Bold.eot');
+    src: local('Fibre Vintage Full Bold'), local('FibreVintageFull-Bold'),
+        url('../fonts/FibreVintageFull-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FibreVintageFull-Bold.woff2') format('woff2'),
+        url('../fonts/FibreVintageFull-Bold.woff') format('woff'),
+        url('../fonts/FibreVintageFull-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewMedium-Obl.eot');
+    src: local('Futura New Medium Obl'), local('FuturaNewMedium-Obl'),
+        url('../fonts/FuturaNewMedium-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewMedium-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewMedium-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewMedium-Obl.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New Demi';
+    src: url('FuturaNewDemi-Obl.eot');
+    src: local('Futura New Demi Obl'), local('FuturaNewDemi-Obl'),
+        url('../fonts/FuturaNewDemi-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewDemi-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewDemi-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewDemi-Obl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewMedium-Reg.eot');
+    src: local('Futura New Medium Reg'), local('FuturaNewMedium-Reg'),
+        url('../fonts/FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewMedium-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewMedium-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewMedium-Reg.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewHeavy-Reg.eot');
+    src: local('Futura New Heavy Reg'), local('FuturaNewHeavy-Reg'),
+        url('../fonts/FuturaNewHeavy-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewHeavy-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewHeavy-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewHeavy-Reg.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewLight-Obl.eot');
+    src: local('Futura New Light Obl'), local('FuturaNewLight-Obl'),
+        url('../fonts/FuturaNewLight-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewLight-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewLight-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewLight-Obl.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New Book';
+    src: url('FuturaNewBook-Obl.eot');
+    src: local('Futura New Book Obl'), local('FuturaNewBook-Obl'),
+        url('../fonts/FuturaNewBook-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewBook-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewBook-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewBook-Obl.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewExtraBold-Obl.eot');
+    src: local('Futura New ExtraBold Obl'), local('FuturaNewExtraBold-Obl'),
+        url('../fonts/FuturaNewExtraBold-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewExtraBold-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewExtraBold-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewExtraBold-Obl.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New Book';
+    src: url('FuturaNewBook-Reg.eot');
+    src: local('Futura New Book Reg'), local('FuturaNewBook-Reg'),
+        url('../fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewBook-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewBook-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewBook-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewBold-Obl.eot');
+    src: local('Futura New Bold Obl'), local('FuturaNewBold-Obl'),
+        url('../fonts/FuturaNewBold-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewBold-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewBold-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewBold-Obl.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewExtraBold-Reg.eot');
+    src: local('Futura New ExtraBold Reg'), local('FuturaNewExtraBold-Reg'),
+        url('../fonts/FuturaNewExtraBold-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewExtraBold-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewExtraBold-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewExtraBold-Reg.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewLight-Reg.eot');
+    src: local('Futura New Light Reg'), local('FuturaNewLight-Reg'),
+        url('../fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewLight-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewLight-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewLight-Reg.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New Demi';
+    src: url('FuturaNewDemi-Reg.eot');
+    src: local('Futura New Demi Reg'), local('FuturaNewDemi-Reg'),
+        url('../fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewDemi-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewDemi-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewDemi-Reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewBold-Reg.eot');
+    src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
+        url('../fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewBold-Reg.woff2') format('woff2'),
+        url('../fonts/FuturaNewBold-Reg.woff') format('woff'),
+        url('../fonts/FuturaNewBold-Reg.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: url('FuturaNewHeavy-Obl.eot');
+    src: local('Futura New Heavy Obl'), local('FuturaNewHeavy-Obl'),
+        url('../fonts/FuturaNewHeavy-Obl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaNewHeavy-Obl.woff2') format('woff2'),
+        url('../fonts/FuturaNewHeavy-Obl.woff') format('woff'),
+        url('../fonts/FuturaNewHeavy-Obl.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Fonts end */
+
+/* Doc common styles start */
+
+html {
+    box-sizing: border-box;
+    background-color: rgba(16, 16, 16, 1);
+}
+
+*,
+::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Futura New';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17.58px;
+    font-weight: normal;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(16, 16, 16, 1);
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.wrapper_for_background_image {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Doc common styles end */
+
+/* header styles start */
+
+.header {
+    background-color: rgba(16, 16, 16, 1);
+    width: 100%;
+}
+
+.header_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav_link {
+    margin-right: 40px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav_link:last-child {
+    margin-right: 0;
+}
+
+.nav_link,
+.header_form_button {
+    line-height: 17.58px;
+    text-align: left;
+}
+
+.nav_link:hover,
+.nav_link:focus,
+.nav_link:active {
+    color: rgba(255, 237, 0, 1);
+}
+
+.nav_form_button {
+    width: 144px;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid rgba(255, 237, 0, 1);
+    color: rgba(255, 237, 0, 1);
+    font-family: Futura New;
+    font-size: 14px;
+    line-height: 17.58px;
+    text-align: center;
+    padding: 8px;
+}
+
+.nav_form_button:hover,
+.nav_form_button:focus,
+.nav_form_button:active {
+    background-color: rgba(255, 237, 0, 1);
+    border: 1px solid rgba(255, 237, 0, 1);
+    color: rgba(16, 16, 16, 1);
+}
+
+.nav_download_pic {
+    margin-right: 8px;
+}
+
+/* header styles end */
+
+/* intro styles start */
+
+.intro_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.intro_text,
+.intro_pic {
+    width: 50%;
+    align-self: center;
+}
+
+.intro_wrapper h1 {
+    font-family: Fibre Vintage Full;
+    font-size: 46px;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(255, 237, 0, 1);    
+}
+
+.intro_wrapper h2 {
+    font-family: Fibre Vintage Full;
+    font-size: 78px;
+    line-height: 82px;
+    text-align: left;
+    color: rgba(255, 237, 0, 1);    
+}
+
+.intro_wrapper p {
+    font-family: Futura New;
+    font-size: 48px;
+    line-height: 60.29px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 62px;
+}
+
+.intro_logo {
+    width: 455px;
+    height: 106px;
+    margin-top: 16px;
+}
+
+.intro_pic img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* intro styles end */
+
+/* properties styles start */
+
+.properties {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    margin-bottom: 104px;
+}
+
+.properties_item {
+    grid-column: span 1;
+    /* width: 255px; */
+    color: rgba(255, 255, 255, 1);
+    font-family: Futura New;
+    font-size: 24px;
+    line-height: 30.14px;
+    text-align: center;
+}
+
+.properties img {
+    /* width: 255px; */
+    margin-bottom: 24px;
+}
+
+.properties_regular_text {
+    font-family: Futura New;
+    font-size: 24px;
+    line-height: 28.82px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.properties_styled_text {
+    font-family: Fibre Vintage Full;
+    font-size: 82px;
+    line-height: 82px;
+    text-align: center;
+    color: rgba(255, 237, 0, 1);
+    margin-bottom: 24px;
+}
+
+.properties_small_styled_text {
+    font-size: 60px;
+    line-height: 60px;
+}
+
+/* properties styles end */
+
+/* franchise styles start */
+
+.section_franchise {
+    background: url(../img/franchise/burger-underlayer.svg) no-repeat center;
+    background-position: right top;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section_franchise h2 {
+    display: inline-block;
+    font-family: Fibre Vintage Full;
+    font-size: 48px;
+    line-height: 48px;
+    color: rgba(16, 16, 16, 1);
+    margin-top: 80px;
+    margin-bottom: 64px;
+}
+
+.franchise {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.franchise_item {
+    grid-column: span 1;
+    color: rgba(16, 16, 16, 1);
+    margin-bottom: 26px;
+}
+
+.franchise_item img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 16px;
+}
+
+.franchise_bold_text {    
+    font-family: Futura New;
+    font-size: 18px;
+    line-height: 22.61px;
+    text-align: center;
+    color: rgba(16, 16, 16, 1);
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.franchise_regular_text {    
+    font-family: Futura New;
+    font-size: 16px;
+    line-height: 19.22px;
+    text-align: center;
+}
+
+/* franchise styles end */
+
+/* conditions styles start */
+
+.section_conditions {
+    background: rgba(16, 16, 16, 1);
+    text-align: center;
+    position: relative;
+}
+
+.conditions_wrapper {
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.conditions {
+    display: grid;
+    place-items: center;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.conditions_h2_underlayer {
+    background: url("../img/conditions/title-underlayer.svg") no-repeat center;
+    margin-top: 96px;
+    margin-bottom: 40px;
+}
+
+.section_conditions h2 {
+    display: inline-block;
+    font-family: Fibre Vintage Full;
+    font-size: 48px;
+    line-height: 50px;
+    color: rgba(16, 16, 16, 1);
+    padding-bottom: 12px;
+}
+
+.conditions_item {
+    grid-column: span 1;    
+    text-align: center;
+    color: rgba(16, 16, 16, 1);
+}
+
+.conditions_styled_white_text {
+    font-family: Fibre Vintage Full;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 10px;
+}
+
+.conditions_styled_red_text {
+    font-family: Fibre Vintage Full;
+    font-size: 82px;
+    line-height: 82px;
+    color: red;
+}
+
+.conditions_styled_yellow_text {
+    font-family: Fibre Vintage Full;
+    font-size: 82px;
+    line-height: 82px;
+    color: rgba(255, 237, 0, 1);
+}
+
+.conditions_regular_text {
+    font-family: Futura New;
+    font-size: 24px;
+    line-height: 30.14px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 34px;
+}
+
+.conditions_tiny_text {
+    font-weight: normal;   
+    font-family: Futura New;
+    font-size: 14px;
+    line-height: 16.81px;
+    color: #FFFFFF;
+    margin-top: 14px;
+}
+
+/* conditions styles end */
+
+/* requirements styles start */
+
+.section_requirements {
+    text-align: center;
+}
+
+.requirements_wrapped {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.requirements_title_underlayer {
+    background: url("../img/requirements/title-underlayer.svg") no-repeat center;
+    margin-top: 96px;    
+}
+
+.section_requirements h2 {
+    display: inline-block;
+    font-family: Fibre Vintage Full;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: rgba(16, 16, 16, 1);
+    padding-bottom: 12px;
+}
+
+.requirements_item {
+    grid-column: span 1;
+    margin-bottom: 50px;
+}
+
+.requirements_regular_text {
+    font-family: Futura New;
+    font-size: 18px;
+    line-height: 22.61px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.requirements_emphasize_line {
+    background: url("../img/requirements/emphasize-line.svg") no-repeat center;
+    background-size: contain;
+    text-align: center;
+    padding-top: 64px;
+}
+
+.requirements_styled_point {
+    background: url("../img/requirements/number_underlayer.svg") no-repeat center;
+    font-family: Fibre Vintage Full;
+    font-size: 120px;
+    line-height: 120px;
+    text-align: center;
+    color: #FFED00;
+    padding: 5px 5px 40px 5px;   
+}
+
+.requirements_styled_point:hover {
+    background: url("../img/requirements/number_underlayer_hover.svg") no-repeat center;
+    color: red;
+}  
+
+/* requirements styles end */
+
+/* footer styles start */
+
+footer {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background: rgba(255, 237, 0, 1);   
+}
+
+.footer_map {        
+    background: url(../img/footer-map-plug.svg) no-repeat;  
+}
+
+.footer_contacts_wrapper {    
+    margin-top: 72px;
+    margin-left: 96px;
+}
+
+.footer_contacts_title {    
+    font-family: Fibre Vintage Full;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(16, 16, 16, 1);    
+    margin-bottom: 24px;
+}
+
+.footer_contacts_address {
+    font-family: Futura New;
+    font-size: 18px;
+    line-height: 22.61px;
+    text-align: left;
+    margin-bottom: 40px;
+    color: rgba(16, 16, 16, 1);
+}
+
+.footer_download_pic {
+    width: 26.67px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.footer_download_presentation_text {
+    margin-bottom: 16px;
+}
+
+.footer_presentation_link {
+    font-family: Futura New;
+    font-size: 18px;
+    line-height: 22.61px;
+    text-align: left;
+    color: rgba(16, 16, 16, 1);
+}
+
+.footer_form_link_text {
+    margin-bottom: 64px;
+}
+
+.footer_form_link {
+    width: 192px;
+    height: 50px;
+    border-radius: 25px;
+    border: 2px solid rgba(16, 16, 16, 1);
+    color: rgba(16, 16, 16, 1);
+    font-family: Futura New;
+    font-size: 18px;
+    line-height: 22.61px;
+    text-align: center;
+    padding: 12px;
+}
+
+.footer_form_link:hover {
+    border: 2px solid rgba(16, 16, 16, 1);
+    background-color: rgba(16, 16, 16, 1);
+    color: rgba(255, 237, 0, 1);
+}
+
+.p_footer_copywright {
+    font-family: Futura New;
+    font-size: 16px;
+    line-height: 19.22px;
+    text-align: left;
+    color: rgba(16, 16, 16, 1);
+    margin-bottom: 24px;
+}
+
+.p_footer_credentials {
+    font-family: Futura New;
+    font-size: 16px;
+    line-height: 19.22px;
+    text-align: left;
+    color: rgba(16, 16, 16, 1);
+    margin-bottom: 72px;
+}
+
+.footer_parfyonov_pic {
+    width: 130px;
+    height: 24px;    
+}
+
+/* footer styles end */
